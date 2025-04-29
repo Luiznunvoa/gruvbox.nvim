@@ -298,7 +298,7 @@ local function get_groups()
     MatchParen = { bg = colors.bg3, bold = config.bold },
     ColorColumn = { bg = colors.bg1 },
     Conceal = { fg = colors.blue },
-    CursorLine = { bg = colors.bg1 },
+    CursorLine = { bg = colors.bg0 },
     CursorLineNr = { fg = colors.yellow, bg = colors.bg1 },
     NonText = { link = "GruvboxBg2" },
     SpecialKey = { link = "GruvboxFg4" },
