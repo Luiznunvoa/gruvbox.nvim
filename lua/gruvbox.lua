@@ -125,7 +125,6 @@ Gruvbox.palette = {
   light_aqua = "#e8e5b5",
   light_aqua_soft = "#e1dbac",
   gray = "#928374",
-  dark_green_comment = "#4a6741",
 }
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
@@ -170,7 +169,6 @@ local function get_colors()
       dark_green = p.dark_green,
       dark_aqua = p.dark_aqua,
       gray = p.gray,
-      comment_green = p.dark_green_comment,
     },
     light = {
       bg0 = p.light0,
@@ -201,7 +199,6 @@ local function get_colors()
       dark_green = p.light_green,
       dark_aqua = p.light_aqua,
       gray = p.gray,
-      comment_green = p.dark_green_comment,
     },
   }
 
@@ -334,7 +331,7 @@ local function get_groups()
     iCursor = { link = "Cursor" },
     lCursor = { link = "Cursor" },
     Special = { link = "GruvboxOrange" },
-    Comment = { fg = colors.comment_green, italic = config.italic.comments },
+    Comment = { fg = colors.gray, italic = config.italic.comments },
     GitBlame = { fg = colors.bg2, italic = config.italic.comments },
     Todo = { fg = colors.bg0, bg = colors.yellow, bold = config.bold, italic = config.italic.comments },
     Done = { fg = colors.orange, bold = config.bold, italic = config.italic.comments },
